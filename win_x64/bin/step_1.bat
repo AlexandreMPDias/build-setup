@@ -2,16 +2,19 @@
 
 cd %~dp0
 
-@REM python %~dp0..\..\common\essentials.py
-@REM python %~dp0..\..\common\java.py
+python %~dp0..\..\common\essentials.py
+python %~dp0..\..\common\java.py
 
 python -m pip install --upgrade pip
 pip install virtualenv virtualenvwrapper-win
 
-@REM explorer "https://github.com/downloads/bmatzelle/gow/Gow-0.7.0.exe"
+choco install -a -y nvm firacode
 
-@REM cd C:\Dev
-@REM git clone https://github.com/AlexandreMPDias/win-scripts
+explorer "https://github.com/downloads/bmatzelle/gow/Gow-0.7.0.exe"
+
+cd C:\Dev
+git clone https://github.com/AlexandreMPDias/win-scripts
+cd %~dp0
 
 call .\setup-ssh.bat
 echo Finished. Open new terminal
