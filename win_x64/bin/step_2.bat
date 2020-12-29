@@ -1,7 +1,7 @@
 @echo off
 
 cd %~dp0
-setx /M PATH "%PATH%;C:\Git\win-scripts\Scripts\bin;C:\Dev\Gow\bin"
+setx /M PATH "%PATH%;C:\Dev\win-scripts\Scripts\bin;C:\Dev\Gow\bin"
 
 
 nvm install --lts
